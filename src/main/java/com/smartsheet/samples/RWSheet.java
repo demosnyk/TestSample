@@ -25,6 +25,11 @@ public class RWSheet {
     public static void main(final String[] args) {
 
         try {
+            
+            // Tetsing
+            File testfile = new File("test.txt");
+            byte[] bytes = testfile.getBytes();
+            
             // Get API access token from properties file or environment
             Properties prop = new Properties();
             prop.load(new FileInputStream("RWSheet.properties"));
